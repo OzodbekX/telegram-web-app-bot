@@ -1,0 +1,20 @@
+.language-switcher {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 32px);
+    justify-content: space-between;
+    max-width: 0 auto;
+
+    .language-title {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-weight: 500;
+        margin: 0;
+        color: #111827;
+    }
+
+    .ant-select-selector {
+        border-radius: 8px !important;
+    }
+}
