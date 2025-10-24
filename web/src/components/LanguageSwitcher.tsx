@@ -15,13 +15,9 @@ export default function LanguageSwitcher() {
 
   return (
     <div className="language-switcher">
-      <h2 className="language-title">
-        Turon Telecom
-      </h2>
-
       <Select
         defaultValue={currentLang}
-        style={{ width: 70 }}
+        style={{ width: 70 ,padding: "2px"}}
         size="large"
         onChange={changeLanguage}
       >

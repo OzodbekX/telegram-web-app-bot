@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-web-app-bot
+    env_file:
+      - .env     # <-- This loads BOT_TOKEN and WEBAPP_URL automatically
+    restart: always

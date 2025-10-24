@@ -15,15 +15,16 @@ body{
   max-width: 100%;
   width: max-content;
   max-height: 100%;
+  place-items: start !important;
   
   .main{
     width: 100%;
     height: 100%;
-    padding: 8px;
     display: flex;
     flex-direction: column;
     gap: 0;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     
   }
 }

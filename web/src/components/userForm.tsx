@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { Alert, Button, Form, Input, Select, Spin } from "antd";
+import {  Button, Form, Input, Select, Spin } from "antd";
 import { getBillingCities, getBillingRegions, postLeadNote, PostLeadNoteParams } from "../api/helpers";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom"; // ✅ React Router
-import "./userForm.scss";
-import WebApp from "@twa-dev/sdk";
 import PhoneNumberInput from "./PhoneNumberInput";
+import LanguageSwitcher from "./LanguageSwitcher";
+import "./userForm.scss";
 
 const { Option } = Select;
 
@@ -122,6 +121,8 @@ export default function FormPage() {
       <div className="card">
         <div className="card-header">
           <h4>{t("title")}</h4>
+          <LanguageSwitcher />
+
         </div>
 
         <div className="card-body">
